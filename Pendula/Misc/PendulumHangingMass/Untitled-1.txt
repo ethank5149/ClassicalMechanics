@@ -1,0 +1,1 @@
+frac{(dY+dr)**2}{|Y+r|}+frac{(Y ddY)+(Y ddr)+(r ddY)+(r ddr)}{|Y+r|} - frac{(Y+r)(dY+dr) Y dY+(Y+r)(dY+dr) Y dr+(Y+r)(dY+dr) r dY+(Y+r)(dY+dr) r dr}{|Y+r|**3}

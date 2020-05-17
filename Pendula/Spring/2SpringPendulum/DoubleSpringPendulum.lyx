@@ -1,0 +1,429 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\begin_modules
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.5in
+\topmargin 1in
+\rightmargin 0.5in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+The Double Spring Pendulum
+\end_layout
+
+\begin_layout Author
+Ethan Knox
+\end_layout
+
+\begin_layout Date
+12/10/19
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+Parameters
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $L_{1}$
+\end_inset
+
+: Spring 1 Relaxed Length
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $m_{1}$
+\end_inset
+
+: Pendulum 1 Mass
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $k_{1}$
+\end_inset
+
+: Pendulum 1 Spring Constant
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $L_{2}$
+\end_inset
+
+: Spring 2 Relaxed Length
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $m_{2}$
+\end_inset
+
+: Pendulum 2 Mass
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $k_{2}$
+\end_inset
+
+: Pendulum 2 Spring Constant
+\end_layout
+
+\begin_layout Part*
+Constants
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $g$
+\end_inset
+
+: Gravitational Acceleration
+\end_layout
+
+\begin_layout Part*
+Coordinates
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x_{1},\,y_{1},\,z_{1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{2},\,y_{2},\,z_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+Potential Energy
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V=m_{1}gy_{1}+m_{2}gy_{2}+\frac{1}{2}k_{1}\left(\sqrt{x_{1}^{2}+y_{1}^{2}+z_{1}^{2}}-l_{0,1}\right)^{2}+\frac{1}{2}k_{2}\left(\sqrt{(x_{2}-x_{1})^{2}+(y_{2}-y_{1})^{2}+(z_{2}-z_{1})^{2}}-l_{0,2}\right)^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=gm_{1}y_{1}+gm_{2}y_{2}+\frac{k_{1}\left(\sqrt{x_{1}^{2}+y_{1}^{2}+z_{1}^{2}}-l_{0,1}\right)^{2}}{2}+\frac{k_{2}\left(\sqrt{\left(x_{2}-x_{1}\right)^{2}+\left(y_{2}-y_{1}\right)^{2}+\left(z_{2}-z_{1}\right)^{2}}-l_{0,2}\right)^{2}}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+Kinetic Energy
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T=\frac{1}{2}m_{1}\left(\dot{x}_{1}^{2}+\dot{y}_{1}^{2}+\dot{z}_{1}^{2}\right)+\frac{1}{2}m_{2}\left(\dot{x}_{2}^{2}+\dot{y}_{2}^{2}+\dot{z}_{2}^{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{m_{1}\left(\dot{x}_{1}^{2}+\dot{y}_{1}^{2}+\dot{z}_{1}^{2}\right)}{2}+\frac{m_{2}\left(\dot{x}_{2}^{2}+\dot{y}_{2}^{2}+\dot{z}_{2}^{2}\right)}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+Lagrangian
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathcal{L}=T-V
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=-gm_{1}y_{1}-gm_{2}y_{2}-\frac{k_{1}\left(l_{0,1}-\sqrt{x_{1}^{2}+y_{1}^{2}+z_{1}^{2}}\right)^{2}}{2}-\frac{k_{2}\left(l_{0,2}-\sqrt{\left(x_{1}-x_{2}\right)^{2}+\left(y_{1}-y_{2}\right)^{2}+\left(z_{1}-z_{2}\right)^{2}}\right)^{2}}{2}+\frac{m_{1}\left(\dot{x}_{1}^{2}+\dot{y}_{1}^{2}+\dot{z}_{1}^{2}\right)}{2}+\frac{m_{2}\left(\dot{x}_{2}^{2}+\dot{y}_{2}^{2}+\dot{z}_{2}^{2}\right)}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\frac{\partial\mathcal{L}}{\partial x_{1}}=\frac{k_{1}\left(l_{0,1}-\sqrt{x_{1}^{2}+y_{1}^{2}+z_{1}^{2}}\right)x_{1}}{\sqrt{x_{1}^{2}+y_{1}^{2}+z_{1}^{2}}}+\frac{k_{2}\left(l_{0,2}-\sqrt{\left(x_{1}-x_{2}\right)^{2}+\left(y_{1}-y_{2}\right)^{2}+\left(z_{1}-z_{2}\right)^{2}}\right)\left(x_{1}-x_{2}\right)}{\sqrt{\left(x_{1}-x_{2}\right)^{2}+\left(y_{1}-y_{2}\right)^{2}+\left(z_{1}-z_{2}\right)^{2}}}-m_{1}\frac{d}{dt}\dot{x}_{1}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{k_{1}l_{0,1}x_{1}}{\sqrt{x_{1}^{2}+y_{1}^{2}+z_{1}^{2}}}-k_{1}x_{1}+\frac{k_{2}l_{0,2}x_{1}}{\sqrt{\left(x_{1}-x_{2}\right)^{2}+\left(y_{1}-y_{2}\right)^{2}+\left(z_{1}-z_{2}\right)^{2}}}-\frac{k_{2}l_{0,2}x_{2}}{\sqrt{\left(x_{1}-x_{2}\right)^{2}+\left(y_{1}-y_{2}\right)^{2}+\left(z_{1}-z_{2}\right)^{2}}}-k_{2}x_{1}+k_{2}x_{2}-m_{1}\frac{d}{dt}\dot{x}_{1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{k_{1}l_{0,1}x_{1}}{\sqrt{x_{1}^{2}+y_{1}^{2}+z_{1}^{2}}}-k_{1}x_{1}+\frac{k_{2}l_{0,2}x_{1}}{\sqrt{\left(x_{1}-x_{2}\right)^{2}+\left(y_{1}-y_{2}\right)^{2}+\left(z_{1}-z_{2}\right)^{2}}}-\frac{k_{2}l_{0,2}x_{2}}{\sqrt{\left(x_{1}-x_{2}\right)^{2}+\left(y_{1}-y_{2}\right)^{2}+\left(z_{1}-z_{2}\right)^{2}}}-k_{2}x_{1}+k_{2}x_{2}-m_{1}\ddot{x}_{1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\frac{\partial\mathcal{L}}{\partial y_{1}}=-gm_{1}+\frac{k_{1}\left(l_{0,1}-\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}}\right)\operatorname{y_{1}}{\left(t\right)}}{\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}}}+\frac{k_{2}\left(l_{0,2}-\sqrt{\left(\operatorname{x_{1}}{\left(t\right)}-\operatorname{x_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{y_{1}}{\left(t\right)}-\operatorname{y_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{z_{1}}{\left(t\right)}-\operatorname{z_{2}}{\left(t\right)}\right)^{2}}\right)\left(\operatorname{y_{1}}{\left(t\right)}-\operatorname{y_{2}}{\left(t\right)}\right)}{\sqrt{\left(\operatorname{x_{1}}{\left(t\right)}-\operatorname{x_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{y_{1}}{\left(t\right)}-\operatorname{y_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{z_{1}}{\left(t\right)}-\operatorname{z_{2}}{\left(t\right)}\right)^{2}}}-m_{1}\frac{d}{dt}\dot{y}_{1}{\left(t\right)}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=-gm_{1}+\frac{k_{1}l_{0,1}\operatorname{y_{1}}{\left(t\right)}}{\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}}}-k_{1}\operatorname{y_{1}}{\left(t\right)}+\frac{k_{2}l_{0,2}\operatorname{y_{1}}{\left(t\right)}}{\sqrt{\left(\operatorname{x_{1}}{\left(t\right)}-\operatorname{x_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{y_{1}}{\left(t\right)}-\operatorname{y_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{z_{1}}{\left(t\right)}-\operatorname{z_{2}}{\left(t\right)}\right)^{2}}}-\frac{k_{2}l_{0,2}\operatorname{y_{2}}{\left(t\right)}}{\sqrt{\left(\operatorname{x_{1}}{\left(t\right)}-\operatorname{x_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{y_{1}}{\left(t\right)}-\operatorname{y_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{z_{1}}{\left(t\right)}-\operatorname{z_{2}}{\left(t\right)}\right)^{2}}}-k_{2}\operatorname{y_{1}}{\left(t\right)}+k_{2}\operatorname{y_{2}}{\left(t\right)}-m_{1}\frac{d}{dt}\dot{y}_{1}{\left(t\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=-gm_{1}+\frac{k_{1}l_{0,1}\operatorname{y_{1}}{\left(t\right)}}{\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}}}-k_{1}\operatorname{y_{1}}{\left(t\right)}+\frac{k_{2}l_{0,2}\operatorname{y_{1}}{\left(t\right)}}{\sqrt{\left(\operatorname{x_{1}}{\left(t\right)}-\operatorname{x_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{y_{1}}{\left(t\right)}-\operatorname{y_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{z_{1}}{\left(t\right)}-\operatorname{z_{2}}{\left(t\right)}\right)^{2}}}-\frac{k_{2}l_{0,2}\operatorname{y_{2}}{\left(t\right)}}{\sqrt{\left(\operatorname{x_{1}}{\left(t\right)}-\operatorname{x_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{y_{1}}{\left(t\right)}-\operatorname{y_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{z_{1}}{\left(t\right)}-\operatorname{z_{2}}{\left(t\right)}\right)^{2}}}-k_{2}\operatorname{y_{1}}{\left(t\right)}+k_{2}\operatorname{y_{2}}{\left(t\right)}-m_{1}\ddot{y}_{1}{\left(t\right)}\n
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\frac{\partial\mathcal{L}}{\partial z_{1}}=\frac{k_{1}\left(l_{0,1}-\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}}\right)\operatorname{z_{1}}{\left(t\right)}}{\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}}}+\frac{k_{2}\left(l_{0,2}-\sqrt{\left(\operatorname{x_{1}}{\left(t\right)}-\operatorname{x_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{y_{1}}{\left(t\right)}-\operatorname{y_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{z_{1}}{\left(t\right)}-\operatorname{z_{2}}{\left(t\right)}\right)^{2}}\right)\left(\operatorname{z_{1}}{\left(t\right)}-\operatorname{z_{2}}{\left(t\right)}\right)}{\sqrt{\left(\operatorname{x_{1}}{\left(t\right)}-\operatorname{x_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{y_{1}}{\left(t\right)}-\operatorname{y_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{z_{1}}{\left(t\right)}-\operatorname{z_{2}}{\left(t\right)}\right)^{2}}}-m_{1}\frac{d}{dt}\dot{z}_{1}{\left(t\right)}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{k_{1}l_{0,1}\operatorname{z_{1}}{\left(t\right)}}{\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}}}-k_{1}\operatorname{z_{1}}{\left(t\right)}+\frac{k_{2}l_{0,2}\operatorname{z_{1}}{\left(t\right)}}{\sqrt{\left(\operatorname{x_{1}}{\left(t\right)}-\operatorname{x_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{y_{1}}{\left(t\right)}-\operatorname{y_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{z_{1}}{\left(t\right)}-\operatorname{z_{2}}{\left(t\right)}\right)^{2}}}-\frac{k_{2}l_{0,2}\operatorname{z_{2}}{\left(t\right)}}{\sqrt{\left(\operatorname{x_{1}}{\left(t\right)}-\operatorname{x_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{y_{1}}{\left(t\right)}-\operatorname{y_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{z_{1}}{\left(t\right)}-\operatorname{z_{2}}{\left(t\right)}\right)^{2}}}-k_{2}\operatorname{z_{1}}{\left(t\right)}+k_{2}\operatorname{z_{2}}{\left(t\right)}-m_{1}\frac{d}{dt}\dot{z}_{1}{\left(t\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{k_{1}l_{0,1}\operatorname{z_{1}}{\left(t\right)}}{\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}}}-k_{1}\operatorname{z_{1}}{\left(t\right)}+\frac{k_{2}l_{0,2}\operatorname{z_{1}}{\left(t\right)}}{\sqrt{\left(\operatorname{x_{1}}{\left(t\right)}-\operatorname{x_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{y_{1}}{\left(t\right)}-\operatorname{y_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{z_{1}}{\left(t\right)}-\operatorname{z_{2}}{\left(t\right)}\right)^{2}}}-\frac{k_{2}l_{0,2}\operatorname{z_{2}}{\left(t\right)}}{\sqrt{\left(\operatorname{x_{1}}{\left(t\right)}-\operatorname{x_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{y_{1}}{\left(t\right)}-\operatorname{y_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{z_{1}}{\left(t\right)}-\operatorname{z_{2}}{\left(t\right)}\right)^{2}}}-k_{2}\operatorname{z_{1}}{\left(t\right)}+k_{2}\operatorname{z_{2}}{\left(t\right)}-m_{1}\ddot{z}_{1}{\left(t\right)}\n
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\frac{\partial\mathcal{L}}{\partial x_{2}}=\frac{k_{2}\left(l_{0,2}-\sqrt{\left(\operatorname{x_{1}}{\left(t\right)}-\operatorname{x_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{y_{1}}{\left(t\right)}-\operatorname{y_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{z_{1}}{\left(t\right)}-\operatorname{z_{2}}{\left(t\right)}\right)^{2}}\right)\left(-\operatorname{x_{1}}{\left(t\right)}+\operatorname{x_{2}}{\left(t\right)}\right)}{\sqrt{\left(\operatorname{x_{1}}{\left(t\right)}-\operatorname{x_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{y_{1}}{\left(t\right)}-\operatorname{y_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{z_{1}}{\left(t\right)}-\operatorname{z_{2}}{\left(t\right)}\right)^{2}}}-m_{2}\frac{d}{dt}\dot{x}_{2}{\left(t\right)}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=-\frac{k_{2}l_{0,2}\operatorname{x_{1}}{\left(t\right)}}{\sqrt{\left(\operatorname{x_{1}}{\left(t\right)}-\operatorname{x_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{y_{1}}{\left(t\right)}-\operatorname{y_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{z_{1}}{\left(t\right)}-\operatorname{z_{2}}{\left(t\right)}\right)^{2}}}+\frac{k_{2}l_{0,2}\operatorname{x_{2}}{\left(t\right)}}{\sqrt{\left(\operatorname{x_{1}}{\left(t\right)}-\operatorname{x_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{y_{1}}{\left(t\right)}-\operatorname{y_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{z_{1}}{\left(t\right)}-\operatorname{z_{2}}{\left(t\right)}\right)^{2}}}+k_{2}\operatorname{x_{1}}{\left(t\right)}-k_{2}\operatorname{x_{2}}{\left(t\right)}-m_{2}\frac{d}{dt}\dot{x}_{2}{\left(t\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=-\frac{k_{2}l_{0,2}\operatorname{x_{1}}{\left(t\right)}}{\sqrt{\left(\operatorname{x_{1}}{\left(t\right)}-\operatorname{x_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{y_{1}}{\left(t\right)}-\operatorname{y_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{z_{1}}{\left(t\right)}-\operatorname{z_{2}}{\left(t\right)}\right)^{2}}}+\frac{k_{2}l_{0,2}\operatorname{x_{2}}{\left(t\right)}}{\sqrt{\left(\operatorname{x_{1}}{\left(t\right)}-\operatorname{x_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{y_{1}}{\left(t\right)}-\operatorname{y_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{z_{1}}{\left(t\right)}-\operatorname{z_{2}}{\left(t\right)}\right)^{2}}}+k_{2}\operatorname{x_{1}}{\left(t\right)}-k_{2}\operatorname{x_{2}}{\left(t\right)}-m_{2}\ddot{x}_{2}{\left(t\right)}\n
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\frac{\partial\mathcal{L}}{\partial y_{2}}=-gm_{2}+\frac{k_{2}\left(l_{0,2}-\sqrt{\left(\operatorname{x_{1}}{\left(t\right)}-\operatorname{x_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{y_{1}}{\left(t\right)}-\operatorname{y_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{z_{1}}{\left(t\right)}-\operatorname{z_{2}}{\left(t\right)}\right)^{2}}\right)\left(-\operatorname{y_{1}}{\left(t\right)}+\operatorname{y_{2}}{\left(t\right)}\right)}{\sqrt{\left(\operatorname{x_{1}}{\left(t\right)}-\operatorname{x_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{y_{1}}{\left(t\right)}-\operatorname{y_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{z_{1}}{\left(t\right)}-\operatorname{z_{2}}{\left(t\right)}\right)^{2}}}-m_{2}\frac{d}{dt}\dot{y}_{2}{\left(t\right)}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=-gm_{2}-\frac{k_{2}l_{0,2}\operatorname{y_{1}}{\left(t\right)}}{\sqrt{\left(\operatorname{x_{1}}{\left(t\right)}-\operatorname{x_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{y_{1}}{\left(t\right)}-\operatorname{y_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{z_{1}}{\left(t\right)}-\operatorname{z_{2}}{\left(t\right)}\right)^{2}}}+\frac{k_{2}l_{0,2}\operatorname{y_{2}}{\left(t\right)}}{\sqrt{\left(\operatorname{x_{1}}{\left(t\right)}-\operatorname{x_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{y_{1}}{\left(t\right)}-\operatorname{y_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{z_{1}}{\left(t\right)}-\operatorname{z_{2}}{\left(t\right)}\right)^{2}}}+k_{2}\operatorname{y_{1}}{\left(t\right)}-k_{2}\operatorname{y_{2}}{\left(t\right)}-m_{2}\frac{d}{dt}\dot{y}_{2}{\left(t\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=-gm_{2}-\frac{k_{2}l_{0,2}\operatorname{y_{1}}{\left(t\right)}}{\sqrt{\left(\operatorname{x_{1}}{\left(t\right)}-\operatorname{x_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{y_{1}}{\left(t\right)}-\operatorname{y_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{z_{1}}{\left(t\right)}-\operatorname{z_{2}}{\left(t\right)}\right)^{2}}}+\frac{k_{2}l_{0,2}\operatorname{y_{2}}{\left(t\right)}}{\sqrt{\left(\operatorname{x_{1}}{\left(t\right)}-\operatorname{x_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{y_{1}}{\left(t\right)}-\operatorname{y_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{z_{1}}{\left(t\right)}-\operatorname{z_{2}}{\left(t\right)}\right)^{2}}}+k_{2}\operatorname{y_{1}}{\left(t\right)}-k_{2}\operatorname{y_{2}}{\left(t\right)}-m_{2}\ddot{y}_{2}{\left(t\right)}\n
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\frac{\partial\mathcal{L}}{\partial z_{2}}=\frac{k_{2}\left(l_{0,2}-\sqrt{\left(\operatorname{x_{1}}{\left(t\right)}-\operatorname{x_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{y_{1}}{\left(t\right)}-\operatorname{y_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{z_{1}}{\left(t\right)}-\operatorname{z_{2}}{\left(t\right)}\right)^{2}}\right)\left(-\operatorname{z_{1}}{\left(t\right)}+\operatorname{z_{2}}{\left(t\right)}\right)}{\sqrt{\left(\operatorname{x_{1}}{\left(t\right)}-\operatorname{x_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{y_{1}}{\left(t\right)}-\operatorname{y_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{z_{1}}{\left(t\right)}-\operatorname{z_{2}}{\left(t\right)}\right)^{2}}}-m_{2}\frac{d}{dt}\dot{z}_{2}{\left(t\right)}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=-\frac{k_{2}l_{0,2}\operatorname{z_{1}}{\left(t\right)}}{\sqrt{\left(\operatorname{x_{1}}{\left(t\right)}-\operatorname{x_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{y_{1}}{\left(t\right)}-\operatorname{y_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{z_{1}}{\left(t\right)}-\operatorname{z_{2}}{\left(t\right)}\right)^{2}}}+\frac{k_{2}l_{0,2}\operatorname{z_{2}}{\left(t\right)}}{\sqrt{\left(\operatorname{x_{1}}{\left(t\right)}-\operatorname{x_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{y_{1}}{\left(t\right)}-\operatorname{y_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{z_{1}}{\left(t\right)}-\operatorname{z_{2}}{\left(t\right)}\right)^{2}}}+k_{2}\operatorname{z_{1}}{\left(t\right)}-k_{2}\operatorname{z_{2}}{\left(t\right)}-m_{2}\frac{d}{dt}\dot{z}_{2}{\left(t\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=-\frac{k_{2}l_{0,2}\operatorname{z_{1}}{\left(t\right)}}{\sqrt{\left(\operatorname{x_{1}}{\left(t\right)}-\operatorname{x_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{y_{1}}{\left(t\right)}-\operatorname{y_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{z_{1}}{\left(t\right)}-\operatorname{z_{2}}{\left(t\right)}\right)^{2}}}+\frac{k_{2}l_{0,2}\operatorname{z_{2}}{\left(t\right)}}{\sqrt{\left(\operatorname{x_{1}}{\left(t\right)}-\operatorname{x_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{y_{1}}{\left(t\right)}-\operatorname{y_{2}}{\left(t\right)}\right)^{2}+\left(\operatorname{z_{1}}{\left(t\right)}-\operatorname{z_{2}}{\left(t\right)}\right)^{2}}}+k_{2}\operatorname{z_{1}}{\left(t\right)}-k_{2}\operatorname{z_{2}}{\left(t\right)}-m_{2}\ddot{z}_{2}{\left(t\right)}\n
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ \ddot{x}_{1}{\left(t\right)}:\frac{k_{1}l_{0,1}\operatorname{x_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}}}-\frac{k_{1}\operatorname{x_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}l_{0,2}\operatorname{x_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}l_{0,2}\operatorname{x_{2}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}\operatorname{x_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}\operatorname{x_{2}}{\left(t\right)}}{m_{1}},\quad\ddot{x}_{2}{\left(t\right)}:-\frac{k_{2}l_{0,2}\operatorname{x_{1}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}l_{0,2}\operatorname{x_{2}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}\operatorname{x_{1}}{\left(t\right)}}{m_{2}}-\frac{k_{2}\operatorname{x_{2}}{\left(t\right)}}{m_{2}},\quad\ddot{y}_{1}{\left(t\right)}:-g+\frac{k_{1}l_{0,1}\operatorname{y_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}}}-\frac{k_{1}\operatorname{y_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}l_{0,2}\operatorname{y_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}l_{0,2}\operatorname{y_{2}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}\operatorname{y_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}\operatorname{y_{2}}{\left(t\right)}}{m_{1}},\quad\ddot{y}_{2}{\left(t\right)}:-g-\frac{k_{2}l_{0,2}\operatorname{y_{1}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}l_{0,2}\operatorname{y_{2}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}\operatorname{y_{1}}{\left(t\right)}}{m_{2}}-\frac{k_{2}\operatorname{y_{2}}{\left(t\right)}}{m_{2}},\quad\ddot{z}_{1}{\left(t\right)}:\frac{k_{1}l_{0,1}\operatorname{z_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}}}-\frac{k_{1}\operatorname{z_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}l_{0,2}\operatorname{z_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}l_{0,2}\operatorname{z_{2}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}\operatorname{z_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}\operatorname{z_{2}}{\left(t\right)}}{m_{1}},\quad\ddot{z}_{2}{\left(t\right)}:-\frac{k_{2}l_{0,2}\operatorname{z_{1}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}l_{0,2}\operatorname{z_{2}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}\operatorname{z_{1}}{\left(t\right)}}{m_{2}}-\frac{k_{2}\operatorname{z_{2}}{\left(t\right)}}{m_{2}}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ \ddot{x}_{1}{\left(t\right)}:\frac{k_{1}l_{0,1}\operatorname{x_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}}}-\frac{k_{1}\operatorname{x_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}l_{0,2}\operatorname{x_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}l_{0,2}\operatorname{x_{2}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}\operatorname{x_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}\operatorname{x_{2}}{\left(t\right)}}{m_{1}},\quad\ddot{x}_{2}{\left(t\right)}:-\frac{k_{2}l_{0,2}\operatorname{x_{1}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}l_{0,2}\operatorname{x_{2}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}\operatorname{x_{1}}{\left(t\right)}}{m_{2}}-\frac{k_{2}\operatorname{x_{2}}{\left(t\right)}}{m_{2}},\quad\ddot{y}_{1}{\left(t\right)}:-g+\frac{k_{1}l_{0,1}\operatorname{y_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}}}-\frac{k_{1}\operatorname{y_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}l_{0,2}\operatorname{y_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}l_{0,2}\operatorname{y_{2}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}\operatorname{y_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}\operatorname{y_{2}}{\left(t\right)}}{m_{1}},\quad\ddot{y}_{2}{\left(t\right)}:-g-\frac{k_{2}l_{0,2}\operatorname{y_{1}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}l_{0,2}\operatorname{y_{2}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}\operatorname{y_{1}}{\left(t\right)}}{m_{2}}-\frac{k_{2}\operatorname{y_{2}}{\left(t\right)}}{m_{2}},\quad\ddot{z}_{1}{\left(t\right)}:\frac{k_{1}l_{0,1}\operatorname{z_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}}}-\frac{k_{1}\operatorname{z_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}l_{0,2}\operatorname{z_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}l_{0,2}\operatorname{z_{2}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}\operatorname{z_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}\operatorname{z_{2}}{\left(t\right)}}{m_{1}},\quad\ddot{z}_{2}{\left(t\right)}:-\frac{k_{2}l_{0,2}\operatorname{z_{1}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}l_{0,2}\operatorname{z_{2}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}\operatorname{z_{1}}{\left(t\right)}}{m_{2}}-\frac{k_{2}\operatorname{z_{2}}{\left(t\right)}}{m_{2}}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ \ddot{x}_{1}{\left(t\right)}:\frac{k_{1}l_{0,1}\operatorname{x_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}}}-\frac{k_{1}\operatorname{x_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}l_{0,2}\operatorname{x_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}l_{0,2}\operatorname{x_{2}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}\operatorname{x_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}\operatorname{x_{2}}{\left(t\right)}}{m_{1}},\quad\ddot{x}_{2}{\left(t\right)}:-\frac{k_{2}l_{0,2}\operatorname{x_{1}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}l_{0,2}\operatorname{x_{2}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}\operatorname{x_{1}}{\left(t\right)}}{m_{2}}-\frac{k_{2}\operatorname{x_{2}}{\left(t\right)}}{m_{2}},\quad\ddot{y}_{1}{\left(t\right)}:-g+\frac{k_{1}l_{0,1}\operatorname{y_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}}}-\frac{k_{1}\operatorname{y_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}l_{0,2}\operatorname{y_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}l_{0,2}\operatorname{y_{2}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}\operatorname{y_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}\operatorname{y_{2}}{\left(t\right)}}{m_{1}},\quad\ddot{y}_{2}{\left(t\right)}:-g-\frac{k_{2}l_{0,2}\operatorname{y_{1}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}l_{0,2}\operatorname{y_{2}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}\operatorname{y_{1}}{\left(t\right)}}{m_{2}}-\frac{k_{2}\operatorname{y_{2}}{\left(t\right)}}{m_{2}},\quad\ddot{z}_{1}{\left(t\right)}:\frac{k_{1}l_{0,1}\operatorname{z_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}}}-\frac{k_{1}\operatorname{z_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}l_{0,2}\operatorname{z_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}l_{0,2}\operatorname{z_{2}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}\operatorname{z_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}\operatorname{z_{2}}{\left(t\right)}}{m_{1}},\quad\ddot{z}_{2}{\left(t\right)}:-\frac{k_{2}l_{0,2}\operatorname{z_{1}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}l_{0,2}\operatorname{z_{2}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}\operatorname{z_{1}}{\left(t\right)}}{m_{2}}-\frac{k_{2}\operatorname{z_{2}}{\left(t\right)}}{m_{2}}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ \ddot{x}_{1}{\left(t\right)}:\frac{k_{1}l_{0,1}\operatorname{x_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}}}-\frac{k_{1}\operatorname{x_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}l_{0,2}\operatorname{x_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}l_{0,2}\operatorname{x_{2}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}\operatorname{x_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}\operatorname{x_{2}}{\left(t\right)}}{m_{1}},\quad\ddot{x}_{2}{\left(t\right)}:-\frac{k_{2}l_{0,2}\operatorname{x_{1}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}l_{0,2}\operatorname{x_{2}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}\operatorname{x_{1}}{\left(t\right)}}{m_{2}}-\frac{k_{2}\operatorname{x_{2}}{\left(t\right)}}{m_{2}},\quad\ddot{y}_{1}{\left(t\right)}:-g+\frac{k_{1}l_{0,1}\operatorname{y_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}}}-\frac{k_{1}\operatorname{y_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}l_{0,2}\operatorname{y_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}l_{0,2}\operatorname{y_{2}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}\operatorname{y_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}\operatorname{y_{2}}{\left(t\right)}}{m_{1}},\quad\ddot{y}_{2}{\left(t\right)}:-g-\frac{k_{2}l_{0,2}\operatorname{y_{1}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}l_{0,2}\operatorname{y_{2}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}\operatorname{y_{1}}{\left(t\right)}}{m_{2}}-\frac{k_{2}\operatorname{y_{2}}{\left(t\right)}}{m_{2}},\quad\ddot{z}_{1}{\left(t\right)}:\frac{k_{1}l_{0,1}\operatorname{z_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}}}-\frac{k_{1}\operatorname{z_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}l_{0,2}\operatorname{z_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}l_{0,2}\operatorname{z_{2}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}\operatorname{z_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}\operatorname{z_{2}}{\left(t\right)}}{m_{1}},\quad\ddot{z}_{2}{\left(t\right)}:-\frac{k_{2}l_{0,2}\operatorname{z_{1}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}l_{0,2}\operatorname{z_{2}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}\operatorname{z_{1}}{\left(t\right)}}{m_{2}}-\frac{k_{2}\operatorname{z_{2}}{\left(t\right)}}{m_{2}}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ \ddot{x}_{1}{\left(t\right)}:\frac{k_{1}l_{0,1}\operatorname{x_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}}}-\frac{k_{1}\operatorname{x_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}l_{0,2}\operatorname{x_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}l_{0,2}\operatorname{x_{2}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}\operatorname{x_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}\operatorname{x_{2}}{\left(t\right)}}{m_{1}},\quad\ddot{x}_{2}{\left(t\right)}:-\frac{k_{2}l_{0,2}\operatorname{x_{1}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}l_{0,2}\operatorname{x_{2}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}\operatorname{x_{1}}{\left(t\right)}}{m_{2}}-\frac{k_{2}\operatorname{x_{2}}{\left(t\right)}}{m_{2}},\quad\ddot{y}_{1}{\left(t\right)}:-g+\frac{k_{1}l_{0,1}\operatorname{y_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}}}-\frac{k_{1}\operatorname{y_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}l_{0,2}\operatorname{y_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}l_{0,2}\operatorname{y_{2}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}\operatorname{y_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}\operatorname{y_{2}}{\left(t\right)}}{m_{1}},\quad\ddot{y}_{2}{\left(t\right)}:-g-\frac{k_{2}l_{0,2}\operatorname{y_{1}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}l_{0,2}\operatorname{y_{2}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}\operatorname{y_{1}}{\left(t\right)}}{m_{2}}-\frac{k_{2}\operatorname{y_{2}}{\left(t\right)}}{m_{2}},\quad\ddot{z}_{1}{\left(t\right)}:\frac{k_{1}l_{0,1}\operatorname{z_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}}}-\frac{k_{1}\operatorname{z_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}l_{0,2}\operatorname{z_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}l_{0,2}\operatorname{z_{2}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}\operatorname{z_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}\operatorname{z_{2}}{\left(t\right)}}{m_{1}},\quad\ddot{z}_{2}{\left(t\right)}:-\frac{k_{2}l_{0,2}\operatorname{z_{1}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}l_{0,2}\operatorname{z_{2}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}\operatorname{z_{1}}{\left(t\right)}}{m_{2}}-\frac{k_{2}\operatorname{z_{2}}{\left(t\right)}}{m_{2}}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ \ddot{x}_{1}{\left(t\right)}:\frac{k_{1}l_{0,1}\operatorname{x_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}}}-\frac{k_{1}\operatorname{x_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}l_{0,2}\operatorname{x_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}l_{0,2}\operatorname{x_{2}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}\operatorname{x_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}\operatorname{x_{2}}{\left(t\right)}}{m_{1}},\quad\ddot{x}_{2}{\left(t\right)}:-\frac{k_{2}l_{0,2}\operatorname{x_{1}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}l_{0,2}\operatorname{x_{2}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}\operatorname{x_{1}}{\left(t\right)}}{m_{2}}-\frac{k_{2}\operatorname{x_{2}}{\left(t\right)}}{m_{2}},\quad\ddot{y}_{1}{\left(t\right)}:-g+\frac{k_{1}l_{0,1}\operatorname{y_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}}}-\frac{k_{1}\operatorname{y_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}l_{0,2}\operatorname{y_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}l_{0,2}\operatorname{y_{2}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}\operatorname{y_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}\operatorname{y_{2}}{\left(t\right)}}{m_{1}},\quad\ddot{y}_{2}{\left(t\right)}:-g-\frac{k_{2}l_{0,2}\operatorname{y_{1}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}l_{0,2}\operatorname{y_{2}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}\operatorname{y_{1}}{\left(t\right)}}{m_{2}}-\frac{k_{2}\operatorname{y_{2}}{\left(t\right)}}{m_{2}},\quad\ddot{z}_{1}{\left(t\right)}:\frac{k_{1}l_{0,1}\operatorname{z_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}}}-\frac{k_{1}\operatorname{z_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}l_{0,2}\operatorname{z_{1}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}l_{0,2}\operatorname{z_{2}}{\left(t\right)}}{m_{1}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}-\frac{k_{2}\operatorname{z_{1}}{\left(t\right)}}{m_{1}}+\frac{k_{2}\operatorname{z_{2}}{\left(t\right)}}{m_{1}},\quad\ddot{z}_{2}{\left(t\right)}:-\frac{k_{2}l_{0,2}\operatorname{z_{1}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}l_{0,2}\operatorname{z_{2}}{\left(t\right)}}{m_{2}\sqrt{\operatorname{x_{1}}^{2}{\left(t\right)}-2\operatorname{x_{1}}{\left(t\right)}\operatorname{x_{2}}{\left(t\right)}+\operatorname{x_{2}}^{2}{\left(t\right)}+\operatorname{y_{1}}^{2}{\left(t\right)}-2\operatorname{y_{1}}{\left(t\right)}\operatorname{y_{2}}{\left(t\right)}+\operatorname{y_{2}}^{2}{\left(t\right)}+\operatorname{z_{1}}^{2}{\left(t\right)}-2\operatorname{z_{1}}{\left(t\right)}\operatorname{z_{2}}{\left(t\right)}+\operatorname{z_{2}}^{2}{\left(t\right)}}}+\frac{k_{2}\operatorname{z_{1}}{\left(t\right)}}{m_{2}}-\frac{k_{2}\operatorname{z_{2}}{\left(t\right)}}{m_{2}}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

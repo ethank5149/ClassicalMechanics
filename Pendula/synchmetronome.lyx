@@ -1,0 +1,103 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\begin_modules
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.5in
+\topmargin 1in
+\rightmargin 0.5in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{l}
+\text{x0}''(t)\to-\frac{(\alpha(1)+1)gm(2)\sin(2q(2)(t))+(\alpha(2)+1)gm(1)\sin(2q(1)(t))+2(\alpha(1)+1)(\alpha(2)+1)l(1)m(1)\left(q(1)'(t)\right)^{2}\sin(q(1)(t))+2(\alpha(1)+1)(\alpha(2)+1)l(2)m(2)\left(q(2)'(t)\right)^{2}\sin(q(2)(t))}{2\left((\alpha(2)+1)m(1)\cos^{2}(q(1)(t))-(\alpha(1)+1)\left((\alpha(2)+1)(m(1)+m(2)+M)-m(2)\cos^{2}(q(2)(t))\right)\right)}\\
+q(1)''(t)\to-\frac{g(2\alpha(2)(m(1)+m(2)+M)+2m(1)+m(2)+2M)\sin(q(1)(t))-gm(2)\sin(q(1)(t)-2q(2)(t))+(\alpha(2)+1)l(1)m(1)\left(q(1)'(t)\right)^{2}\sin(2q(1)(t))+2(\alpha(2)+1)l(2)m(2)\left(q(2)'(t)\right)^{2}\sin(q(2)(t))\cos(q(1)(t))}{2l(1)\left((\alpha(1)+1)\left((\alpha(2)+1)(m(1)+m(2)+M)-m(2)\cos^{2}(q(2)(t))\right)-(\alpha(2)+1)m(1)\cos^{2}(q(1)(t))\right)}\\
+q(2)''(t)\to\frac{m(1)\cos(q(2)(t))\left(g\sin(2q(1)(t))+2(\alpha(1)+1)l(1)\left(q(1)'(t)\right)^{2}\sin(q(1)(t))\right)+g\sin(q(2)(t))(-m(1)\cos(2q(1)(t))+2\alpha(1)(m(1)+m(2)+M)+m(1)+2m(2)+2M)+(\alpha(1)+1)l(2)m(2)\left(q(2)'(t)\right)^{2}\sin(2q(2)(t))}{l(2)((\alpha(1)+1)m(2)\cos(2q(2)(t))+(\alpha(2)+1)m(1)\cos(2q(1)(t))-(2\alpha(2)+1)(\alpha(1)+1)m(2)-(2\alpha(1)+1)(\alpha(2)+1)m(1)-2(\alpha(2)+1)(\alpha(1)+1)M)}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,2 @@
+ddv = - (g*np.sin(v)+2*dv*dr)/r
+ddr = (-M*g+g*m*np.cos(v)+m*r*dv**2)/(M+m)

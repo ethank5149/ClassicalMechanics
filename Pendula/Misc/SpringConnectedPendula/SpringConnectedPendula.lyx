@@ -1,0 +1,511 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\begin_modules
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.5in
+\topmargin 1in
+\rightmargin 0.5in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Spring Connected Pendula
+\end_layout
+
+\begin_layout Author
+Ethan Knox
+\end_layout
+
+\begin_layout Date
+1/2/20
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+Parameters
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $l_{1}$
+\end_inset
+
+: Pendula 1 Length
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $l_{2}$
+\end_inset
+
+: Pendula 2 Length
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $m_{1}$
+\end_inset
+
+: Pendula 1 Mass
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $m_{2}$
+\end_inset
+
+: Pendula 2 Mass
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $k$
+\end_inset
+
+: Spring Constant
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $l_{0}$
+\end_inset
+
+: Spring Relaxed Length
+\end_layout
+
+\begin_layout Part*
+Constants
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $g$
+\end_inset
+
+: Gravitational Acceleration
+\end_layout
+
+\begin_layout Part*
+Coordinates
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x_{1}=l_{1}\sin\left(\phi_{1}\right)\cos\left(\theta_{1}\right),\,y_{1}=l_{1}\sin\left(\phi_{1}\right)\sin\left(\theta_{1}\right),\,z_{1}=l_{1}\cos\left(\phi_{1}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{2}=l_{2}\sin\left(\phi_{2}\right)\cos\left(\theta_{2}\right),\,y_{2}=l_{2}\sin\left(\phi_{2}\right)\sin\left(\theta_{2}\right),\,z_{2}=l_{2}\cos\left(\phi_{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+Derivatives
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\dot{x}_{1}=l_{1}\dot{\phi}_{1}\cos\left(\phi_{1}\right)\cos\left(\theta_{1}\right)-l_{1}\dot{\theta}_{1}\sin\left(\phi_{1}\right)\sin\left(\theta_{1}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\dot{x}_{2}=l_{2}\dot{\phi}_{2}\cos\left(\phi_{2}\right)\cos\left(\theta_{2}\right)-l_{2}\dot{\theta}_{2}\sin\left(\phi_{2}\right)\sin\left(\theta_{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\dot{y}_{1}=l_{1}\dot{\phi}_{1}\sin\left(\theta_{1}\right)\cos\left(\phi_{1}\right)+l_{1}\dot{\theta}_{1}\sin\left(\phi_{1}\right)\cos\left(\theta_{1}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\dot{y}_{2}=l_{2}\dot{\phi}_{2}\sin\left(\theta_{2}\right)\cos\left(\phi_{2}\right)+l_{2}\dot{\theta}_{2}\sin\left(\phi_{2}\right)\cos\left(\theta_{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\dot{z}_{1}=-l_{1}\dot{\phi}_{1}\sin\left(\phi_{1}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\dot{z}_{2}=-l_{2}\dot{\phi}_{2}\sin\left(\phi_{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ddot{x}_{1}=l_{1}\ddot{\phi}_{1}\cos\left(\phi_{1}\right)\cos\left(\theta_{1}\right)-l_{1}\ddot{\theta}_{1}\sin\left(\phi_{1}\right)\sin\left(\theta_{1}\right)-l_{1}\dot{\phi}_{1}^{2}\sin\left(\phi_{1}\right)\cos\left(\theta_{1}\right)-2l_{1}\dot{\phi}_{1}\dot{\theta}_{1}\sin\left(\theta_{1}\right)\cos\left(\phi_{1}\right)-l_{1}\dot{\theta}_{1}^{2}\sin\left(\phi_{1}\right)\cos\left(\theta_{1}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ddot{x}_{2}=l_{2}\ddot{\phi}_{2}\cos\left(\phi_{2}\right)\cos\left(\theta_{2}\right)-l_{2}\ddot{\theta}_{2}\sin\left(\phi_{2}\right)\sin\left(\theta_{2}\right)-l_{2}\dot{\phi}_{2}^{2}\sin\left(\phi_{2}\right)\cos\left(\theta_{2}\right)-2l_{2}\dot{\phi}_{2}\dot{\theta}_{2}\sin\left(\theta_{2}\right)\cos\left(\phi_{2}\right)-l_{2}\dot{\theta}_{2}^{2}\sin\left(\phi_{2}\right)\cos\left(\theta_{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ddot{y}_{1}=l_{1}\ddot{\phi}_{1}\sin\left(\theta_{1}\right)\cos\left(\phi_{1}\right)+l_{1}\ddot{\theta}_{1}\sin\left(\phi_{1}\right)\cos\left(\theta_{1}\right)-l_{1}\dot{\phi}_{1}^{2}\sin\left(\phi_{1}\right)\sin\left(\theta_{1}\right)+2l_{1}\dot{\phi}_{1}\dot{\theta}_{1}\cos\left(\phi_{1}\right)\cos\left(\theta_{1}\right)-l_{1}\dot{\theta}_{1}^{2}\sin\left(\phi_{1}\right)\sin\left(\theta_{1}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ddot{y}_{2}=l_{2}\ddot{\phi}_{2}\sin\left(\theta_{2}\right)\cos\left(\phi_{2}\right)+l_{2}\ddot{\theta}_{2}\sin\left(\phi_{2}\right)\cos\left(\theta_{2}\right)-l_{2}\dot{\phi}_{2}^{2}\sin\left(\phi_{2}\right)\sin\left(\theta_{2}\right)+2l_{2}\dot{\phi}_{2}\dot{\theta}_{2}\cos\left(\phi_{2}\right)\cos\left(\theta_{2}\right)-l_{2}\dot{\theta}_{2}^{2}\sin\left(\phi_{2}\right)\sin\left(\theta_{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ddot{z}_{1}=-l_{1}\ddot{\phi}_{1}\sin\left(\phi_{1}\right)-l_{1}\dot{\phi}_{1}^{2}\cos\left(\phi_{1}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ddot{z}_{2}=-l_{2}\ddot{\phi}_{2}\sin\left(\phi_{2}\right)-l_{2}\dot{\phi}_{2}^{2}\cos\left(\phi_{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+Potential Energy
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V=gm_{1}y_{1}+gm_{2}y_{2}+\frac{k\left(-l_{0}+\sqrt{\left(-x_{1}+x_{2}\right)^{2}+\left(-y_{1}+y_{2}\right)^{2}+\left(-z_{1}+z_{2}\right)^{2}}\right)^{2}}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+gl_{1}m_{1}\sin\left(\phi_{1}\right)\sin\left(\theta_{1}\right)+gl_{2}m_{2}\sin\left(\phi_{2}\right)\sin\left(\theta_{2}\right)+\frac{k\left(-l_{0}+\sqrt{\left(-l_{1}\cos\left(\phi_{1}\right)+l_{2}\cos\left(\phi_{2}\right)\right)^{2}+\left(-l_{1}\sin\left(\phi_{1}\right)\sin\left(\theta_{1}\right)+l_{2}\sin\left(\phi_{2}\right)\sin\left(\theta_{2}\right)\right)^{2}+\left(-l_{1}\sin\left(\phi_{1}\right)\cos\left(\theta_{1}\right)+l_{2}\sin\left(\phi_{2}\right)\cos\left(\theta_{2}\right)\right)^{2}}\right)^{2}}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+gl_{1}m_{1}\sin\left(\phi_{1}\right)\sin\left(\theta_{1}\right)+gl_{2}m_{2}\sin\left(\phi_{2}\right)\sin\left(\theta_{2}\right)+\frac{k\left(l_{0}-\sqrt{l_{1}^{2}-2l_{1}l_{2}\sin\left(\phi_{1}\right)\sin\left(\phi_{2}\right)\cos\left(\theta_{1}-\theta_{2}\right)-2l_{1}l_{2}\cos\left(\phi_{1}\right)\cos\left(\phi_{2}\right)+l_{2}^{2}}\right)^{2}}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+Kinetic Energy
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T=\frac{m_{1}\left(\dot{x}_{1}^{2}+\dot{y}_{1}^{2}+\dot{z}_{1}^{2}\right)}{2}+\frac{m_{2}\left(\dot{x}_{2}^{2}+\dot{y}_{2}^{2}+\dot{z}_{2}^{2}\right)}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{m_{1}\left(l_{1}^{2}\dot{\phi}_{1}^{2}\sin^{2}\left(\phi_{1}\right)+\left(l_{1}\dot{\phi}_{1}\sin\left(\theta_{1}\right)\cos\left(\phi_{1}\right)+l_{1}\dot{\theta}_{1}\sin\left(\phi_{1}\right)\cos\left(\theta_{1}\right)\right)^{2}+\left(l_{1}\dot{\phi}_{1}\cos\left(\phi_{1}\right)\cos\left(\theta_{1}\right)-l_{1}\dot{\theta}_{1}\sin\left(\phi_{1}\right)\sin\left(\theta_{1}\right)\right)^{2}\right)}{2}+\frac{m_{2}\left(l_{2}^{2}\dot{\phi}_{2}^{2}\sin^{2}\left(\phi_{2}\right)+\left(l_{2}\dot{\phi}_{2}\sin\left(\theta_{2}\right)\cos\left(\phi_{2}\right)+l_{2}\dot{\theta}_{2}\sin\left(\phi_{2}\right)\cos\left(\theta_{2}\right)\right)^{2}+\left(l_{2}\dot{\phi}_{2}\cos\left(\phi_{2}\right)\cos\left(\theta_{2}\right)-l_{2}\dot{\theta}_{2}\sin\left(\phi_{2}\right)\sin\left(\theta_{2}\right)\right)^{2}\right)}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{l_{1}^{2}m_{1}\left(\dot{\phi}_{1}^{2}+\dot{\theta}_{1}^{2}\sin^{2}\left(\phi_{1}\right)\right)}{2}+\frac{l_{2}^{2}m_{2}\left(\dot{\phi}_{2}^{2}+\dot{\theta}_{2}^{2}\sin^{2}\left(\phi_{2}\right)\right)}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+Lagrangian
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathcal{L}=T-V
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=-gm_{1}y_{1}-gm_{2}y_{2}-\frac{k\left(l_{0}-\sqrt{\left(x_{1}-x_{2}\right)^{2}+\left(y_{1}-y_{2}\right)^{2}+\left(z_{1}-z_{2}\right)^{2}}\right)^{2}}{2}+\frac{m_{1}\left(\dot{x}_{1}^{2}+\dot{y}_{1}^{2}+\dot{z}_{1}^{2}\right)}{2}+\frac{m_{2}\left(\dot{x}_{2}^{2}+\dot{y}_{2}^{2}+\dot{z}_{2}^{2}\right)}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=-gl_{1}m_{1}\sin\left(\phi_{1}\right)\sin\left(\theta_{1}\right)-gl_{2}m_{2}\sin\left(\phi_{2}\right)\sin\left(\theta_{2}\right)-\frac{k\left(-l_{0}+\sqrt{\left(-l_{1}\cos\left(\phi_{1}\right)+l_{2}\cos\left(\phi_{2}\right)\right)^{2}+\left(-l_{1}\sin\left(\phi_{1}\right)\sin\left(\theta_{1}\right)+l_{2}\sin\left(\phi_{2}\right)\sin\left(\theta_{2}\right)\right)^{2}+\left(-l_{1}\sin\left(\phi_{1}\right)\cos\left(\theta_{1}\right)+l_{2}\sin\left(\phi_{2}\right)\cos\left(\theta_{2}\right)\right)^{2}}\right)^{2}}{2}+\frac{m_{1}\left(l_{1}^{2}\dot{\phi}_{1}^{2}\sin^{2}\left(\phi_{1}\right)+\left(l_{1}\dot{\phi}_{1}\sin\left(\theta_{1}\right)\cos\left(\phi_{1}\right)+l_{1}\dot{\theta}_{1}\sin\left(\phi_{1}\right)\cos\left(\theta_{1}\right)\right)^{2}+\left(l_{1}\dot{\phi}_{1}\cos\left(\phi_{1}\right)\cos\left(\theta_{1}\right)-l_{1}\dot{\theta}_{1}\sin\left(\phi_{1}\right)\sin\left(\theta_{1}\right)\right)^{2}\right)}{2}+\frac{m_{2}\left(l_{2}^{2}\dot{\phi}_{2}^{2}\sin^{2}\left(\phi_{2}\right)+\left(l_{2}\dot{\phi}_{2}\sin\left(\theta_{2}\right)\cos\left(\phi_{2}\right)+l_{2}\dot{\theta}_{2}\sin\left(\phi_{2}\right)\cos\left(\theta_{2}\right)\right)^{2}+\left(l_{2}\dot{\phi}_{2}\cos\left(\phi_{2}\right)\cos\left(\theta_{2}\right)-l_{2}\dot{\theta}_{2}\sin\left(\phi_{2}\right)\sin\left(\theta_{2}\right)\right)^{2}\right)}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=-gl_{1}m_{1}\sin\left(\phi_{1}\right)\sin\left(\theta_{1}\right)-gl_{2}m_{2}\sin\left(\phi_{2}\right)\sin\left(\theta_{2}\right)-\frac{k\left(l_{0}-\sqrt{l_{1}^{2}-2l_{1}l_{2}\sin\left(\phi_{1}\right)\sin\left(\phi_{2}\right)\cos\left(\theta_{1}-\theta_{2}\right)-2l_{1}l_{2}\cos\left(\phi_{1}\right)\cos\left(\phi_{2}\right)+l_{2}^{2}}\right)^{2}}{2}+\frac{l_{1}^{2}m_{1}\left(\dot{\phi}_{1}^{2}+\dot{\theta}_{1}^{2}\sin^{2}\left(\phi_{1}\right)\right)}{2}+\frac{l_{2}^{2}m_{2}\left(\dot{\phi}_{2}^{2}+\dot{\theta}_{2}^{2}\sin^{2}\left(\phi_{2}\right)\right)}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+Euler-Lagrange Equations
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{\partial\mathcal{L}}{\partial\phi_{1}}=-gl_{1}m_{1}\sin\left(\theta_{1}\right)\cos\left(\phi_{1}\right)+\frac{k\left(l_{0}-\sqrt{l_{1}^{2}-2l_{1}l_{2}\sin\left(\phi_{1}\right)\sin\left(\phi_{2}\right)\cos\left(\theta_{1}-\theta_{2}\right)-2l_{1}l_{2}\cos\left(\phi_{1}\right)\cos\left(\phi_{2}\right)+l_{2}^{2}}\right)\left(l_{1}l_{2}\sin\left(\phi_{1}\right)\cos\left(\phi_{2}\right)-l_{1}l_{2}\sin\left(\phi_{2}\right)\cos\left(\theta_{1}-\theta_{2}\right)\cos\left(\phi_{1}\right)\right)}{\sqrt{l_{1}^{2}-2l_{1}l_{2}\sin\left(\phi_{1}\right)\sin\left(\phi_{2}\right)\cos\left(\theta_{1}-\theta_{2}\right)-2l_{1}l_{2}\cos\left(\phi_{1}\right)\cos\left(\phi_{2}\right)+l_{2}^{2}}}+l_{1}^{2}m_{1}\dot{\theta}_{1}^{2}\sin\left(\phi_{1}\right)\cos\left(\phi_{1}\right)-l_{1}^{2}m_{1}\frac{d}{dt}\dot{\phi}_{1}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $=\frac{l_{1}\left(kl_{2}\left(l_{0}-\sqrt{l_{1}^{2}-2l_{1}l_{2}\sin\left(\phi_{1}\right)\sin\left(\phi_{2}\right)\cos\left(\theta_{1}-\theta_{2}\right)-2l_{1}l_{2}\cos\left(\phi_{1}\right)\cos\left(\phi_{2}\right)+l_{2}^{2}}\right)\left(\sin\left(\phi_{1}\right)\cos\left(\phi_{2}\right)-\sin\left(\phi_{2}\right)\cos\left(\theta_{1}-\theta_{2}\right)\cos\left(\phi_{1}\right)\right)+m_{1}\left(-g\sin\left(\theta_{1}\right)\cos\left(\phi_{1}\right)+\frac{l_{1}\dot{\theta}_{1}^{2}\sin\left(2\phi_{1}\right)}{2}-l_{1}\frac{d}{dt}\dot{\phi}_{1}\right)\sqrt{l_{1}^{2}-2l_{1}l_{2}\sin\left(\phi_{1}\right)\sin\left(\phi_{2}\right)\cos\left(\theta_{1}-\theta_{2}\right)-2l_{1}l_{2}\cos\left(\phi_{1}\right)\cos\left(\phi_{2}\right)+l_{2}^{2}}\right)}{\sqrt{l_{1}^{2}-2l_{1}l_{2}\sin\left(\phi_{1}\right)\sin\left(\phi_{2}\right)\cos\left(\theta_{1}-\theta_{2}\right)-2l_{1}l_{2}\cos\left(\phi_{1}\right)\cos\left(\phi_{2}\right)+l_{2}^{2}}}$
+\end_inset
+
+
+\begin_inset Formula $=\frac{l_{1}\left(kl_{2}\left(l_{0}-\sqrt{l_{1}^{2}-2l_{1}l_{2}\sin\left(\phi_{1}\right)\sin\left(\phi_{2}\right)\cos\left(\theta_{1}-\theta_{2}\right)-2l_{1}l_{2}\cos\left(\phi_{1}\right)\cos\left(\phi_{2}\right)+l_{2}^{2}}\right)\left(\sin\left(\phi_{1}\right)\cos\left(\phi_{2}\right)-\sin\left(\phi_{2}\right)\cos\left(\theta_{1}-\theta_{2}\right)\cos\left(\phi_{1}\right)\right)+m_{1}\left(-g\sin\left(\theta_{1}\right)\cos\left(\phi_{1}\right)-l_{1}\ddot{\phi}_{1}+\frac{l_{1}\dot{\theta}_{1}^{2}\sin\left(2\phi_{1}\right)}{2}\right)\sqrt{l_{1}^{2}-2l_{1}l_{2}\sin\left(\phi_{1}\right)\sin\left(\phi_{2}\right)\cos\left(\theta_{1}-\theta_{2}\right)-2l_{1}l_{2}\cos\left(\phi_{1}\right)\cos\left(\phi_{2}\right)+l_{2}^{2}}\right)}{\sqrt{l_{1}^{2}-2l_{1}l_{2}\sin\left(\phi_{1}\right)\sin\left(\phi_{2}\right)\cos\left(\theta_{1}-\theta_{2}\right)-2l_{1}l_{2}\cos\left(\phi_{1}\right)\cos\left(\phi_{2}\right)+l_{2}^{2}}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{\partial\mathcal{L}}{\partial\phi_{2}}=-gl_{2}m_{2}\sin\left(\theta_{2}\right)\cos\left(\phi_{2}\right)+\frac{k\left(l_{0}-\sqrt{l_{1}^{2}-2l_{1}l_{2}\sin\left(\phi_{1}\right)\sin\left(\phi_{2}\right)\cos\left(\theta_{1}-\theta_{2}\right)-2l_{1}l_{2}\cos\left(\phi_{1}\right)\cos\left(\phi_{2}\right)+l_{2}^{2}}\right)\left(-l_{1}l_{2}\sin\left(\phi_{1}\right)\cos\left(\theta_{1}-\theta_{2}\right)\cos\left(\phi_{2}\right)+l_{1}l_{2}\sin\left(\phi_{2}\right)\cos\left(\phi_{1}\right)\right)}{\sqrt{l_{1}^{2}-2l_{1}l_{2}\sin\left(\phi_{1}\right)\sin\left(\phi_{2}\right)\cos\left(\theta_{1}-\theta_{2}\right)-2l_{1}l_{2}\cos\left(\phi_{1}\right)\cos\left(\phi_{2}\right)+l_{2}^{2}}}+l_{2}^{2}m_{2}\dot{\theta}_{2}^{2}\sin\left(\phi_{2}\right)\cos\left(\phi_{2}\right)-l_{2}^{2}m_{2}\frac{d}{dt}\dot{\phi}_{2}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $=\frac{l_{2}\left(-kl_{1}\left(l_{0}-\sqrt{l_{1}^{2}-2l_{1}l_{2}\sin\left(\phi_{1}\right)\sin\left(\phi_{2}\right)\cos\left(\theta_{1}-\theta_{2}\right)-2l_{1}l_{2}\cos\left(\phi_{1}\right)\cos\left(\phi_{2}\right)+l_{2}^{2}}\right)\left(\sin\left(\phi_{1}\right)\cos\left(\theta_{1}-\theta_{2}\right)\cos\left(\phi_{2}\right)-\sin\left(\phi_{2}\right)\cos\left(\phi_{1}\right)\right)+m_{2}\left(-g\sin\left(\theta_{2}\right)\cos\left(\phi_{2}\right)+\frac{l_{2}\dot{\theta}_{2}^{2}\sin\left(2\phi_{2}\right)}{2}-l_{2}\frac{d}{dt}\dot{\phi}_{2}\right)\sqrt{l_{1}^{2}-2l_{1}l_{2}\sin\left(\phi_{1}\right)\sin\left(\phi_{2}\right)\cos\left(\theta_{1}-\theta_{2}\right)-2l_{1}l_{2}\cos\left(\phi_{1}\right)\cos\left(\phi_{2}\right)+l_{2}^{2}}\right)}{\sqrt{l_{1}^{2}-2l_{1}l_{2}\sin\left(\phi_{1}\right)\sin\left(\phi_{2}\right)\cos\left(\theta_{1}-\theta_{2}\right)-2l_{1}l_{2}\cos\left(\phi_{1}\right)\cos\left(\phi_{2}\right)+l_{2}^{2}}}$
+\end_inset
+
+
+\begin_inset Formula $=\frac{l_{2}\left(-kl_{1}\left(l_{0}-\sqrt{l_{1}^{2}-2l_{1}l_{2}\sin\left(\phi_{1}\right)\sin\left(\phi_{2}\right)\cos\left(\theta_{1}-\theta_{2}\right)-2l_{1}l_{2}\cos\left(\phi_{1}\right)\cos\left(\phi_{2}\right)+l_{2}^{2}}\right)\left(\sin\left(\phi_{1}\right)\cos\left(\theta_{1}-\theta_{2}\right)\cos\left(\phi_{2}\right)-\sin\left(\phi_{2}\right)\cos\left(\phi_{1}\right)\right)+m_{2}\left(-g\sin\left(\theta_{2}\right)\cos\left(\phi_{2}\right)-l_{2}\ddot{\phi}_{2}+\frac{l_{2}\dot{\theta}_{2}^{2}\sin\left(2\phi_{2}\right)}{2}\right)\sqrt{l_{1}^{2}-2l_{1}l_{2}\sin\left(\phi_{1}\right)\sin\left(\phi_{2}\right)\cos\left(\theta_{1}-\theta_{2}\right)-2l_{1}l_{2}\cos\left(\phi_{1}\right)\cos\left(\phi_{2}\right)+l_{2}^{2}}\right)}{\sqrt{l_{1}^{2}-2l_{1}l_{2}\sin\left(\phi_{1}\right)\sin\left(\phi_{2}\right)\cos\left(\theta_{1}-\theta_{2}\right)-2l_{1}l_{2}\cos\left(\phi_{1}\right)\cos\left(\phi_{2}\right)+l_{2}^{2}}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{\partial\mathcal{L}}{\partial\theta_{1}}=-gl_{1}m_{1}\sin\left(\phi_{1}\right)\cos\left(\theta_{1}\right)+\frac{kl_{1}l_{2}\left(l_{0}-\sqrt{l_{1}^{2}-2l_{1}l_{2}\sin\left(\phi_{1}\right)\sin\left(\phi_{2}\right)\cos\left(\theta_{1}-\theta_{2}\right)-2l_{1}l_{2}\cos\left(\phi_{1}\right)\cos\left(\phi_{2}\right)+l_{2}^{2}}\right)\sin\left(\theta_{1}-\theta_{2}\right)\sin\left(\phi_{1}\right)\sin\left(\phi_{2}\right)}{\sqrt{l_{1}^{2}-2l_{1}l_{2}\sin\left(\phi_{1}\right)\sin\left(\phi_{2}\right)\cos\left(\theta_{1}-\theta_{2}\right)-2l_{1}l_{2}\cos\left(\phi_{1}\right)\cos\left(\phi_{2}\right)+l_{2}^{2}}}-l_{1}^{2}m_{1}\left(2\dot{\theta}_{1}\cos\left(\phi_{1}\right)\frac{d}{dt}\phi_{1}+\sin\left(\phi_{1}\right)\frac{d}{dt}\dot{\theta}_{1}\right)\sin\left(\phi_{1}\right)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $=l_{1}\left(-gm_{1}\cos\left(\theta_{1}\right)+\frac{kl_{0}l_{2}\sin\left(\theta_{1}-\theta_{2}\right)\sin\left(\phi_{2}\right)}{\sqrt{l_{1}^{2}-2l_{1}l_{2}\sin\left(\phi_{1}\right)\sin\left(\phi_{2}\right)\cos\left(\theta_{1}-\theta_{2}\right)-2l_{1}l_{2}\cos\left(\phi_{1}\right)\cos\left(\phi_{2}\right)+l_{2}^{2}}}-kl_{2}\sin\left(\theta_{1}-\theta_{2}\right)\sin\left(\phi_{2}\right)-2l_{1}m_{1}\dot{\theta}_{1}\cos\left(\phi_{1}\right)\frac{d}{dt}\phi_{1}-l_{1}m_{1}\sin\left(\phi_{1}\right)\frac{d}{dt}\dot{\theta}_{1}\right)\sin\left(\phi_{1}\right)$
+\end_inset
+
+
+\begin_inset Formula $=l_{1}\left(-gm_{1}\cos\left(\theta_{1}\right)+\frac{kl_{0}l_{2}\sin\left(\theta_{1}-\theta_{2}\right)\sin\left(\phi_{2}\right)}{\sqrt{l_{1}^{2}-2l_{1}l_{2}\sin\left(\phi_{1}\right)\sin\left(\phi_{2}\right)\cos\left(\theta_{1}-\theta_{2}\right)-2l_{1}l_{2}\cos\left(\phi_{1}\right)\cos\left(\phi_{2}\right)+l_{2}^{2}}}-kl_{2}\sin\left(\theta_{1}-\theta_{2}\right)\sin\left(\phi_{2}\right)-l_{1}m_{1}\ddot{\theta}_{1}\sin\left(\phi_{1}\right)-2l_{1}m_{1}\dot{\phi}_{1}\dot{\theta}_{1}\cos\left(\phi_{1}\right)\right)\sin\left(\phi_{1}\right)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{\partial\mathcal{L}}{\partial\theta_{2}}=-gl_{2}m_{2}\sin\left(\phi_{2}\right)\cos\left(\theta_{2}\right)-\frac{kl_{1}l_{2}\left(l_{0}-\sqrt{l_{1}^{2}-2l_{1}l_{2}\sin\left(\phi_{1}\right)\sin\left(\phi_{2}\right)\cos\left(\theta_{1}-\theta_{2}\right)-2l_{1}l_{2}\cos\left(\phi_{1}\right)\cos\left(\phi_{2}\right)+l_{2}^{2}}\right)\sin\left(\theta_{1}-\theta_{2}\right)\sin\left(\phi_{1}\right)\sin\left(\phi_{2}\right)}{\sqrt{l_{1}^{2}-2l_{1}l_{2}\sin\left(\phi_{1}\right)\sin\left(\phi_{2}\right)\cos\left(\theta_{1}-\theta_{2}\right)-2l_{1}l_{2}\cos\left(\phi_{1}\right)\cos\left(\phi_{2}\right)+l_{2}^{2}}}-l_{2}^{2}m_{2}\left(2\dot{\theta}_{2}\cos\left(\phi_{2}\right)\frac{d}{dt}\phi_{2}+\sin\left(\phi_{2}\right)\frac{d}{dt}\dot{\theta}_{2}\right)\sin\left(\phi_{2}\right)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $=l_{2}\left(-gm_{2}\cos\left(\theta_{2}\right)-\frac{kl_{0}l_{1}\sin\left(\theta_{1}-\theta_{2}\right)\sin\left(\phi_{1}\right)}{\sqrt{l_{1}^{2}-2l_{1}l_{2}\sin\left(\phi_{1}\right)\sin\left(\phi_{2}\right)\cos\left(\theta_{1}-\theta_{2}\right)-2l_{1}l_{2}\cos\left(\phi_{1}\right)\cos\left(\phi_{2}\right)+l_{2}^{2}}}+kl_{1}\sin\left(\theta_{1}-\theta_{2}\right)\sin\left(\phi_{1}\right)-2l_{2}m_{2}\dot{\theta}_{2}\cos\left(\phi_{2}\right)\frac{d}{dt}\phi_{2}-l_{2}m_{2}\sin\left(\phi_{2}\right)\frac{d}{dt}\dot{\theta}_{2}\right)\sin\left(\phi_{2}\right)$
+\end_inset
+
+
+\begin_inset Formula $=l_{2}\left(-gm_{2}\cos\left(\theta_{2}\right)-\frac{kl_{0}l_{1}\sin\left(\theta_{1}-\theta_{2}\right)\sin\left(\phi_{1}\right)}{\sqrt{l_{1}^{2}-2l_{1}l_{2}\sin\left(\phi_{1}\right)\sin\left(\phi_{2}\right)\cos\left(\theta_{1}-\theta_{2}\right)-2l_{1}l_{2}\cos\left(\phi_{1}\right)\cos\left(\phi_{2}\right)+l_{2}^{2}}}+kl_{1}\sin\left(\theta_{1}-\theta_{2}\right)\sin\left(\phi_{1}\right)-l_{2}m_{2}\ddot{\theta}_{2}\sin\left(\phi_{2}\right)-2l_{2}m_{2}\dot{\phi}_{2}\dot{\theta}_{2}\cos\left(\phi_{2}\right)\right)\sin\left(\phi_{2}\right)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ddot{\phi}_{1}=\frac{-gm_{1}\sin\theta_{1}\cos\phi_{1}+\frac{kl_{0}l_{2}\sin\phi_{1}\cos\phi_{2}-kl_{0}l_{2}\sin\phi_{2}\cos\left(\theta_{1}-\theta_{2}\right)\cos\phi_{1}}{\sqrt{l_{1}^{2}-2l_{1}l_{2}\sin\phi_{1}\sin\phi_{2}\cos\left(\theta_{1}-\theta_{2}\right)-2l_{1}l_{2}\cos\phi_{1}\cos\phi_{2}+l_{2}^{2}}}-kl_{2}\sin\phi_{1}\cos\phi_{2}+kl_{2}\sin\phi_{2}\cos\left(\theta_{1}-\theta_{2}\right)\cos\phi_{1}+l_{1}m_{1}\dot{\theta}_{1}^{2}\sin\phi_{1}\cos\phi_{1}}{l_{1}m_{1}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ddot{\phi}_{2}=\frac{-gm_{2}\sin\theta_{2}\cos\phi_{2}-\frac{kl_{0}l_{1}\sin\phi_{1}\cos\left(\theta_{1}-\theta_{2}\right)\cos\phi_{2}+kl_{0}l_{1}\sin\phi_{2}\cos\phi_{1}}{\sqrt{l_{1}^{2}-2l_{1}l_{2}\sin\phi_{1}\sin\phi_{2}\cos\left(\theta_{1}-\theta_{2}\right)-2l_{1}l_{2}\cos\phi_{1}\cos\phi_{2}+l_{2}^{2}}}+kl_{1}\sin\phi_{1}\cos\left(\theta_{1}-\theta_{2}\right)\cos\phi_{2}-kl_{1}\sin\phi_{2}\cos\phi_{1}+l_{2}m_{2}\dot{\theta}_{2}^{2}\sin\phi_{2}\cos\phi_{2}}{l_{2}m_{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ddot{\theta}_{1}=\frac{-\frac{gm_{1}\cos\theta_{1}}{\sin\phi_{1}}+\frac{kl_{0}l_{2}\sin\left(\theta_{1}-\theta_{2}\right)\sin\phi_{2}}{\sqrt{l_{1}^{2}-2l_{1}l_{2}\sin\phi_{1}\sin\phi_{2}\cos\left(\theta_{1}-\theta_{2}\right)-2l_{1}l_{2}\cos\phi_{1}\cos\phi_{2}+l_{2}^{2}}\sin\phi_{1}}-\frac{kl_{2}\sin\left(\theta_{1}-\theta_{2}\right)\sin\phi_{2}}{\sin\phi_{1}}-\frac{2l_{1}m_{1}\dot{\phi}_{1}\dot{\theta}_{1}}{\tan\phi_{1}}}{l_{1}m_{1}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ddot{\theta}_{2}=\frac{-\frac{gm_{2}\cos\theta_{2}}{\sin\phi_{2}}-\frac{kl_{0}l_{1}\sin\left(\theta_{1}-\theta_{2}\right)\sin\phi_{1}}{\sqrt{l_{1}^{2}-2l_{1}l_{2}\sin\phi_{1}\sin\phi_{2}\cos\left(\theta_{1}-\theta_{2}\right)-2l_{1}l_{2}\cos\phi_{1}\cos\phi_{2}+l_{2}^{2}}\sin\phi_{2}}+\frac{kl_{1}\sin\left(\theta_{1}-\theta_{2}\right)\sin\phi_{1}}{\sin\phi_{2}}-\frac{2l_{2}m_{2}\dot{\phi}_{2}\dot{\theta}_{2}}{\tan\phi_{2}}}{l_{2}m_{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
