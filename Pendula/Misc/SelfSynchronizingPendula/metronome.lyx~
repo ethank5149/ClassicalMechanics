@@ -1,0 +1,348 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\begin_modules
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.5in
+\topmargin 1in
+\rightmargin 0.5in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Formula $y_{1}=-l_{1}\cos\left(\theta_{1}\right)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{2}=-l_{2}\cos\left(\theta_{2}\right)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $qleft[y\_,t\_]:=-g(m1Sin[\backslash[Theta]1[t]]+m2Sin[\backslash[Theta]2[t]])DiracDelta[y-h]$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $qright[y\_,t\_]:=-g(m1Sin[\backslash[Theta]1[t]]+m2Sin[\backslash[Theta]2[t]])DiracDelta[y-h]$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $qtop[x\_,t\_]:=g(m1Cos[\backslash[Theta]1[t]]DiracDelta[x-x1]+m2Cos[\backslash[Theta]2[t]]DiracDelta[x-x2])$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $wleft[y_{,}t_{]}:=wright[y,t]$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Tleft[y\_,t\_]:=1/2\backslash[Mu]D[wleft[y,t],t]\mathcircumflex2$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Tright[y\_,t\_]:=1/2\backslash[Mu]D[wright[y,t],t]\mathcircumflex2$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Ttop[x\_,t\_]:=1/2\backslash[Mu]D[wtop[x,t],t]\mathcircumflex2$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T1[t\_]:=1/2I1\backslash[Theta]1'[t]\mathcircumflex2$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T2[t\_]:=1/2I2\backslash[Theta]2'[t]\mathcircumflex2$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Vleft[y_{,}t_{]}:=1/2EID[wleft[y,t],{y,2}]^{2}-qleft[y,t]wleft[y,t]$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Vright[y_{,}t_{]}:=1/2EID[wright[y,t],{y,2}]^{2}-qright[y,t]wright[y,t]$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Vtop[x_{,}t_{]}:=1/2EID[wtop[x,t],{x,2}]^{2}-qtop[x,t]wtop[x,t]$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V1[t_{]}:=m1gy1[t]$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V2[t_{]}:=m2gy2[t]$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T[x_{,}y_{,}t_{]}:=Tleft[y,t]+Tright[y,t]+Ttop[x,t]+T1[t]+T2[t]$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V[x_{,}y_{,}t_{]}:=Vleft[y,t]+Vright[y,t]+Vtop[x,t]+V1[t]+V2[t]$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L[x_{,}y_{,}t_{]}:=T[x,y,t]-V[x,y,t]$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ELleft:=D[L[x,y,t],wleft[y,t]]-D[L[x,y,t],D[wleft[y,t],t],t]+D[L[x,y,t],D[wleft,{y,2}],{y,2}]==0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ELright:=D[L[x,y,t],wright[y,t]]-D[L[x,y,t],D[wright[y,t],t],t]+D[L[x,y,t],D[wright,{y,2}],{y,2}]==0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ELtop:=D[L[x,y,t],wtop[x,t]]-D[L[x,y,t],D[wtop[x,t],t],t]+D[L[x,y,t],D[wtop,{x,2}],{x,2}]==0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $EL1:=D[L[x,y,t],\backslash[Theta]1[t]]-D[L[x,y,t],D[\backslash[Theta]1[y,t],t],t]==0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $EL2:=D[L[x,y,t],\backslash[Theta]2[t]]-D[L[x,y,t],D[\backslash[Theta]2[y,t],t],t]==0$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
